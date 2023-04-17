@@ -4,17 +4,11 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class StudentListIndex extends Component
+class EnrollmentListIndex extends Component
 {
-    public $showPostModal = false;
     public $editStudent = false;
     public $viewStudent = false;
 
-    public function showPostModal()
-    {
-        $this->reset();
-        $this->showPostModal = true;
-    }
     public function editStudent()
     {
         $this->reset();
@@ -28,6 +22,6 @@ class StudentListIndex extends Component
     
     public function render()
     {
-        return view('livewire.student-list-index');
+        return view('livewire.enrollment-list-index');
     }
 }

@@ -4,9 +4,12 @@ attendance 30%
 activity 25% --}}
 
 <section class="container px-4 mx-auto">
+    <div class="sm:flex sm:items-center sm:justify-center">
+        <h1 class="px-4 mt-5 text-5xl font-normal text-center text-gray-500 dark:text-gray-400">List of Grade</h1>
+    </div>
     <div class="sm:flex sm:items-center sm:justify-between">
             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-5 py-2 mt-5 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
-                <img alt="ecommerce" class="object-cover w-10 h-10" src="{{ asset('images/filew.png') }}">
+                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/filew.png') }}">
                 <span class="text-white">View Grade</span>
             </button> 
 

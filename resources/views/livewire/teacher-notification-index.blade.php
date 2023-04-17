@@ -2,7 +2,6 @@
     <div class="sm:flex sm:items-center sm:justify-center">
             <h1 class="px-4 mt-5 text-5xl font-normal text-center text-gray-500 dark:text-gray-400">Notification</h1>
     </div>
-
     <div class="mx-3 mt-6 flex items-center justify-around gap-5">
         <div>
             <button wire:click="composeMessage" class="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
@@ -52,7 +51,7 @@
                                 </th>
 
                                 <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Sender
+                                    To
                                 </th>
 
                                 <th scope="col" class="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400">Message</th>
@@ -68,12 +67,12 @@
                             <tr>
                                 <td class="px-12 py-4 text-sm font-medium whitespace-nowrap hidden md:inline-flex">
                                     <div class="inline px-3 py-1 text-sm font-normal rounded-full text-emerald-500 gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                                        Read
+                                        Delivered
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Teacher name</h2>    
+                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">All Student of Alpha 1st</h2>    
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
@@ -96,13 +95,13 @@
 
                             <tr>
                                 <td class="px-12 py-4 text-sm font-medium whitespace-nowrap hidden md:inline-flex">
-                                    <div class="inline px-3 py-1 text-sm font-normal text-gray-500 bg-gray-100 rounded-full dark:text-gray-400 gap-x-2 dark:bg-gray-800">
-                                        Unread
+                                    <div class="inline px-3 py-1 text-sm font-normal text-red-500 bg-gray-100 rounded-full dark:text-red-400 gap-x-2 dark:bg-gray-800">
+                                        Not send
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Teacher name</h2>  
+                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">All Student of Alpha 1st</h2>  
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
@@ -126,12 +125,12 @@
                             <tr>
                                 <td class="px-12 py-4 text-sm font-medium whitespace-nowrap hidden md:inline-flex">
                                     <div class="inline px-3 py-1 text-sm font-normal rounded-full text-emerald-500 gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                                        Read
+                                        Delivered
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Admin name</h2>  
+                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">All Student of Alpha 1st</h2>  
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
@@ -154,13 +153,13 @@
 
                             <tr>
                                 <td class="px-12 py-4 text-sm font-medium whitespace-nowrap hidden md:inline-flex">
-                                    <div class="inline px-3 py-1 text-sm font-normal text-gray-500 bg-gray-100 rounded-full dark:text-gray-400 gap-x-2 dark:bg-gray-800">
-                                        Unread
+                                    <div class="inline px-3 py-1 text-sm font-normal text-red-500 bg-gray-100 rounded-full dark:text-red-400 gap-x-2 dark:bg-gray-800">
+                                        Not Send
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Teacher name</h2>  
+                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">All Student of Alpha 1st</h2>  
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
@@ -184,12 +183,12 @@
                             <tr>
                                 <td class="px-12 py-4 text-sm font-medium whitespace-nowrap hidden md:inline-flex">
                                     <div class="inline px-3 py-1 text-sm font-normal rounded-full text-emerald-500 gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                                        Read
+                                        Delivered
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
                                     <div class="flex items-center">
-                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">Admin name</h2>  
+                                        <h2 class="text-sm font-medium text-gray-800 dark:text-white ">All Student of Alpha 1st</h2>  
                                     </div>
                                 </td>
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">

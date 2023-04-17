@@ -1,7 +1,8 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            {{-- <x-authentication-card-logo /> --}}
+                <img alt="ecommerce" class="block h-20 w-auto" src="{{ asset('images/cvsu-logo.png') }}">   
         </x-slot>
 
         <x-validation-errors class="mb-4" />

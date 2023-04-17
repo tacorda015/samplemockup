@@ -90,17 +90,20 @@
                                 <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Cluster A</td>
                                 
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                    <div class="flex items-center gap-x-6">
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                            </svg>
+                                    <div class="flex items-center gap-x-3">
+                                        <button class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/delete.png') }}">
+                                            <span>Delete</span>
                                         </button>
 
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                            </svg>
+                                        <button wire:click="viewStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/view.png') }}">
+                                            <span>View</span>
+                                        </button>
+
+                                        <button wire:click="editStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
+                                                <span>Edit</span>
                                         </button>
                                     </div>
                                 </td>
@@ -132,17 +135,20 @@
                                 <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">--</td>
                                 
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                    <div class="flex items-center gap-x-6">
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                            </svg>
+                                    <div class="flex items-center gap-x-3">
+                                        <button class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/delete.png') }}">
+                                            <span>Delete</span>
                                         </button>
 
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                            </svg>
+                                        <button wire:click="viewStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/view.png') }}">
+                                            <span>View</span>
+                                        </button>
+
+                                        <button wire:click="editStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
+                                                <span>Edit</span>
                                         </button>
                                     </div>
                                 </td>
@@ -174,17 +180,20 @@
                                 <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Medic</td>
                                 
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                    <div class="flex items-center gap-x-6">
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                            </svg>
+                                    <div class="flex items-center gap-x-3">
+                                        <button class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/delete.png') }}">
+                                            <span>Delete</span>
                                         </button>
 
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                            </svg>
+                                        <button wire:click="viewStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/view.png') }}">
+                                            <span>View</span>
+                                        </button>
+
+                                        <button wire:click="editStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
+                                                <span>Edit</span>
                                         </button>
                                     </div>
                                 </td>
@@ -216,17 +225,20 @@
                                 <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">--</td>
                                 
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                    <div class="flex items-center gap-x-6">
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                            </svg>
+                                    <div class="flex items-center gap-x-3">
+                                        <button class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/delete.png') }}">
+                                            <span>Delete</span>
                                         </button>
 
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                            </svg>
+                                        <button wire:click="viewStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/view.png') }}">
+                                            <span>View</span>
+                                        </button>
+
+                                        <button wire:click="editStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
+                                                <span>Edit</span>
                                         </button>
                                     </div>
                                 </td>
@@ -258,17 +270,20 @@
                                 <td class="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">Bravo 2nd</td>
                                 
                                 <td class="px-4 py-4 text-sm whitespace-nowrap">
-                                    <div class="flex items-center gap-x-6">
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-red-500 dark:text-gray-300 hover:text-red-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                                            </svg>
+                                    <div class="flex items-center gap-x-3">
+                                        <button class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/delete.png') }}">
+                                            <span>Delete</span>
                                         </button>
 
-                                        <button class="text-gray-500 transition-colors duration-200 dark:hover:text-yellow-500 dark:text-gray-300 hover:text-yellow-500 focus:outline-none">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                                            </svg>
+                                        <button wire:click="viewStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                            <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/view.png') }}">
+                                            <span>View</span>
+                                        </button>
+
+                                        <button wire:click="editStudent" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
+                                                <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
+                                                <span>Edit</span>
                                         </button>
                                     </div>
                                 </td>
@@ -313,44 +328,159 @@
     </div>
 </section>
 
-<div>
-    <x-dialog-modal wire:model="showingPostModal">
-            <x-slot name="title">Add Student</x-slot>
-        <x-slot name="content">
-            <div class="space-y-8 divide-y divide-gray-200 w-1/2 mt-10">
-                <form enctype="multipart/form-data">
-                  <div class="sm:col-span-6">
-                    <label for="title" class="block text-sm font-medium text-white"> Student Name </label>
-                    <div class="mt-1">
-                      <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                    </div>
-                  </div>
-                  <div class="sm:col-span-6">
-                    <label for="title" class="block text-sm font-medium text-white"> Student Image </label>
-                    <img alt="ecommerce" class="object-cover w-10 h-10 rounded-full" src="{{ asset('images/profile.png') }}">
-                    <div class="mt-1">
-                      <input type="file" id="image" wire:model="newImage" name="image" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                    </div>
-                    @error('newImage') <span class="text-red-400">{{ $message }}</span> @enderror
-                  </div>
-                  <div class="sm:col-span-6">
-                    <label for="title" class="block text-sm font-medium text-white"> Student Component </label>
-                    <div class="mt-1">
-                      <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                    </div>
-                  </div>
-                  <div class="sm:col-span-6">
-                    <label for="title" class="block text-sm font-medium text-white"> Student Cluster/Platoon Name</label>
-                    <div class="mt-1">
-                      <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
-                    </div>
-                  </div>
-                </form>
-              </div>
-              
-        </x-slot>
-        <x-slot name="footer">
-                <x-button wire:click="storePost">Create</x-button>
-        </x-slot>
-    </x-dialog-modal>
-</div>
+<x-dialog-modal wire:model="showPostModal">
+        <x-slot name="title">Add Student</x-slot>
+    <x-slot name="content">
+        <div class="space-y-8 divide-y divide-gray-200 w-1/2 mt-10">
+            <form enctype="multipart/form-data">
+                <div class="sm:col-span-6">
+                <label for="title" class="block text-sm font-medium text-white"> Student Name </label>
+                <div class="mt-1">
+                    <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                </div>
+                </div>
+                <div class="sm:col-span-6">
+                <label for="title" class="block text-sm font-medium text-white"> Student Image </label>
+                <img alt="ecommerce" class="object-cover w-10 h-10 rounded-full" src="{{ asset('images/profile.png') }}">
+                <div class="mt-1">
+                    <input type="file" id="image" wire:model="newImage" name="image" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                </div>
+                @error('newImage') <span class="text-red-400">{{ $message }}</span> @enderror
+                </div>
+                <div class="sm:col-span-6">
+                <label for="title" class="block text-sm font-medium text-white"> Student Component </label>
+                <div class="mt-1">
+                    <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                </div>
+                </div>
+                <div class="sm:col-span-6">
+                <label for="title" class="block text-sm font-medium text-white"> Student Group Name</label>
+                <div class="mt-1">
+                    <input type="text" id="title" wire:model.lazy="title" name="title" class="mb-6 block w-full appearance-none bg-white border border-gray-400 rounded-md py-2 px-3 text-base leading-normal transition duration-150 ease-in-out sm:text-sm sm:leading-5" />
+                </div>
+                </div>
+            </form>
+            </div>
+    </x-slot>
+    <x-slot name="footer">
+            <x-button wire:click="storePost">Create</x-button>
+    </x-slot>
+</x-dialog-modal>
+
+<x-dialog-modal wire:model="editStudent">
+        <x-slot name="title">Edit Student</x-slot>
+    <x-slot name="content">
+        <div class="p-8 mt-4 dark:bg-gray-800 rounded-xl">
+            <div class="flex gap-3 flex-wrap">
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-900 bg-white rounded-lg dark:bg-green-500 dark:text-gray-900 dark:border-gray-600 outline-none">Enrolled</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Status</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">ROTC</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Component</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">Alpha 1st</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Group Name</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">201910045</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Student Number</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">Eduardo Tacorda</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Name</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">4th Year</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Year Level</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">BS Infotech 402B</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Section</label>
+                </div>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Course</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">611 B10 AC MERCADO, WAWA II, ROSARIO, CAVITE</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Address</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">09465419569</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Contact Number</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">eduardo.tacorda@cvsu.edu.ph</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">CvSU Email Address</label>
+                </div>
+            </div>
+        </div>
+    </x-slot>
+    <x-slot name="footer">
+            <x-button wire:click="storePost">Save</x-button>
+    </x-slot>
+</x-dialog-modal>
+
+<x-dialog-modal wire:model="viewStudent">
+        <x-slot name="title">Student Information</x-slot>
+    <x-slot name="content">
+        <div class="p-8 mt-4 dark:bg-gray-800 rounded-xl">
+            <div class="flex gap-3 flex-wrap">
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-900 bg-white rounded-lg dark:bg-green-500 dark:text-gray-900 dark:border-gray-600 outline-none">Enrolled</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Status</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">ROTC</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Component</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">Alpha 1st</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Group Name</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">201910045</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Student Number</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">Eduardo Tacorda</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Name</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">4th Year</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Year Level</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">BS Infotech 402B</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Section</label>
+                </div>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Course</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">611 B10 AC MERCADO, WAWA II, ROSARIO, CAVITE</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Address</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">09465419569</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">Contact Number</label>
+                </div>
+                <div class="flex-grow ">
+                    <h1 class="text-lg px-3 pt-1 h-10 w-full border-none text-gray-700 bg-white rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 outline-none">eduardo.tacorda@cvsu.edu.ph</h1>
+                    <label for="email" class="pl-4 text-gray-300 text-sm">CvSU Email Address</label>
+                </div>
+            </div>
+        </div>
+    </x-slot>
+    <x-slot name="footer">
+            <x-button wire:click="storePost">Close</x-button>
+    </x-slot>
+</x-dialog-modal>

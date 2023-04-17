@@ -14,9 +14,19 @@
             <input type="text" placeholder="Search" class="block w-full py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40">
         </div>
     </div>
-    <div class="flex items-center my-2 mt-5">
-        <h2 class="text-2xl font-medium text-gray-800 dark:text-white mx-3">Eduardo Tacorda</h2>
-        <span class="px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">201910045</span>
+    <div class="flex items-center my-2 mt-5 justify-between">
+        <div>
+            <h2 class="text-2xl font-medium text-gray-800 dark:text-white mx-3">Eduardo Tacorda</h2>
+            <span class="px-3 mx-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">201910045</span>
+        </div>
+        <div>
+            <h2 class="text-2xl font-medium text-gray-800 dark:text-white mx-3">Bachelor of Science In Information Technology</h2>
+            <span class="px-3 mx-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">Course</span>
+        </div>
+        <div>
+            <h2 class="text-2xl font-medium text-gray-800 dark:text-white mx-3">402-B</h2>
+            <span class="px-3 mx-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full dark:bg-gray-800 dark:text-blue-400">Year/Section</span>
+        </div>
     </div>
     <div class="flex flex-col mt-6">
         <div class=" -my-2 overflow-x-auto mx-20 flex justify-center">
@@ -69,7 +79,7 @@
                                         
                                             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
-                                                <span>Edit Grade</span>
+                                                <span>Update Grade</span>
                                             </button>
                                         
                                     </div>
@@ -91,7 +101,7 @@
                                         
                                             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
-                                                <span>Edit Grade</span>
+                                                <span>Update Grade</span>
                                             </button>
                                         
                                     </div>
@@ -113,7 +123,7 @@
                                         
                                             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
-                                                <span>Edit Grade</span>
+                                                <span>Update Grade</span>
                                             </button>
                                         
                                     </div>
@@ -135,7 +145,7 @@
                                         
                                             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
-                                                <span>Edit Grade</span>
+                                                <span>Update Grade</span>
                                             </button>
                                         
                                     </div>
@@ -157,7 +167,7 @@
                                         
                                             <button wire:click="showPostModal" class="flex items-center justify-center w-1/2 px-2 py-1 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto gap-x-2 hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600">
                                                 <img alt="ecommerce" class="object-cover w-5 h-5" src="{{ asset('images/grade.png') }}">
-                                                <span>Edit Grade</span>
+                                                <span>Update Grade</span>
                                             </button>
                                         
                                     </div>
@@ -202,7 +212,7 @@
 
 <x-dialog-modal wire:model="showingPostModal" style="width: 600px;">
         <x-slot name="title">
-            <h1 class="flex justify-center text-xl">Input Grade</h1>
+            <h1 class="flex justify-center text-xl">Update Grade</h1>
         </x-slot>
     <x-slot name="content">
         <form method="post">
@@ -230,6 +240,6 @@
         </form>
     </x-slot>
     <x-slot name="footer">
-            <x-button wire:click="storePost">Submit</x-button>
+            <x-button wire:click="storePost">Update</x-button>
     </x-slot>
 </x-dialog-modal>

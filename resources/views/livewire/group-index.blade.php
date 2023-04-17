@@ -1,4 +1,7 @@
 <section class="container px-4 mx-auto">
+    <div class="sm:flex sm:items-center sm:justify-center">
+        <h1 class="px-4 mt-5 text-5xl font-normal text-center text-gray-500 dark:text-gray-400">List of Group</h1>
+    </div>  
     <div class="sm:flex sm:items-center sm:justify-between">
         <div>
             <div class="flex items-center gap-x-3">

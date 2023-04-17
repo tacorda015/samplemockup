@@ -16,29 +16,29 @@
                     {{-- <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link> --}}
-                    {{-- <x-nav-link href="{{ route('post.index') }}" :active="request()->routeIs('post.index')">
-                        {{ __('QR code') }}
-                    </x-nav-link> --}}
-                    <x-nav-link href="{{ route('attendance.index') }}" :active="request()->routeIs('attendance.index')">
-                        {{ __('Attendance') }}
+                    <x-nav-link href="{{ route('admindash.index') }}" :active="request()->routeIs('admindash.index')">
+                        {{ __('Dashboard') }}
                     </x-nav-link>
-                    {{-- <x-nav-link href="{{ route('notification.index') }}" :active="request()->routeIs('notification.index')">
-                        {{ __('Notification') }}
-                    </x-nav-link> --}}
-                    {{-- <x-nav-link href="{{ route('virtual.index') }}" :active="request()->routeIs('virtual.index')">
-                        {{ __('Virtual') }}
-                    </x-nav-link> --}}
-                    {{-- <x-nav-link href="{{ route('student.list.index') }}" :active="request()->routeIs('student.list.index')">
-                        {{ __('StudentList') }}
-                    </x-nav-link> --}}
+                    <x-nav-link href="{{ route('group.index') }}" :active="request()->routeIs('group.index')">
+                        {{ __('Group') }}
+                    </x-nav-link>
                     <x-nav-link href="{{ route('teacher.list.index') }}" :active="request()->routeIs('teacher.list.index')">
-                        {{ __('TeacherList') }}
+                        {{ __('Teacher List') }}
                     </x-nav-link>
-                    {{-- <x-nav-link href="{{ route('location.index') }}" :active="request()->routeIs('location.index')">
-                        {{ __('Location') }}
-                    </x-nav-link> --}}
-                    {{-- <x-nav-link href="{{ route('slocation.index') }}" :active="request()->routeIs('slocation.index')">
-                        {{ __('Location') }}
+                    <x-nav-link href="{{ route('trainerlist.index') }}" :active="request()->routeIs('trainerlist.index')">
+                        {{ __('Trainer List') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('student.list.index') }}" :active="request()->routeIs('student.list.index')">
+                        {{ __('Student List') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('enrollmentlist.index') }}" :active="request()->routeIs('enrollmentlist.index')">
+                        {{ __('Enrollment') }}
+                    </x-nav-link>
+                    <x-nav-link href="{{ route('exportimport.index') }}" :active="request()->routeIs('exportimport.index')">
+                        {{ __('Import & Export File') }}
+                    </x-nav-link>
+                    {{-- <x-nav-link href="{{ route('teachervirtual.index') }}" :active="request()->routeIs('teachervirtual.index')">
+                        {{ __('Virtual Learning') }}
                     </x-nav-link> --}}
                     {{-- <x-nav-link href="{{ route('group.index') }}" :active="request()->routeIs('group.index')">
                         {{ __('Group List') }}
@@ -49,18 +49,18 @@
                     {{-- <x-nav-link href="{{ route('enrollment.index') }}" :active="request()->routeIs('enrollment.index')">
                         {{ __('Enrollment') }}
                     </x-nav-link> --}}
-                    <x-nav-link href="{{ route('studentdash.index') }}" :active="request()->routeIs('studentdash.index')">
+                    {{-- <x-nav-link href="{{ route('studentdash.index') }}" :active="request()->routeIs('studentdash.index')">
                         {{ __('Student DashBoard') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('teacherdash.index') }}" :active="request()->routeIs('teacherdash.index')">
+                    </x-nav-link> --}}
+                    {{-- <x-nav-link href="{{ route('teacherdash.index') }}" :active="request()->routeIs('teacherdash.index')">
                         {{ __('Teacher DashBoard') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('teachernotification.index') }}" :active="request()->routeIs('teachernotification.index')">
+                    </x-nav-link> --}}
+                    {{-- <x-nav-link href="{{ route('teachernotification.index') }}" :active="request()->routeIs('teachernotification.index')">
                         {{ __('Teacher Notification') }}
-                    </x-nav-link>
-                    <x-nav-link href="{{ route('studentgrade.index') }}" :active="request()->routeIs('studentgrade.index')">
+                    </x-nav-link> --}}
+                    {{-- <x-nav-link href="{{ route('studentgrade.index') }}" :active="request()->routeIs('studentgrade.index')">
                         {{ __('Student Grade') }}
-                    </x-nav-link>
+                    </x-nav-link> --}}
                 </div>
             </div>
 
